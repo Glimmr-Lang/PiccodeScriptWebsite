@@ -1,0 +1,99 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Tokyo Night theme colors */
+    --background: 222 17% 11%; /* #1a1b26 */
+    --foreground: 234 12% 84%; /* #c0caf5 */
+
+    --card: 222 17% 11%; /* #1a1b26 */
+    --card-foreground: 234 12% 84%; /* #c0caf5 */
+
+    --popover: 225 15% 13%; /* #24283b */
+    --popover-foreground: 234 12% 84%; /* #c0caf5 */
+
+    --primary: 267 84% 81%; /* #bb9af7 */
+    --primary-foreground: 222 17% 11%; /* #1a1b26 */
+
+    --secondary: 225 15% 13%; /* #24283b */
+    --secondary-foreground: 234 12% 84%; /* #c0caf5 */
+
+    --muted: 225 15% 13%; /* #24283b */
+    --muted-foreground: 225 9% 59%; /* #9aa5ce */
+
+    --accent: 230 23% 18%; /* #292e42 */
+    --accent-foreground: 234 12% 84%; /* #c0caf5 */
+
+    --destructive: 0 63% 31%; /* #f7768e */
+    --destructive-foreground: 234 12% 84%; /* #c0caf5 */
+
+    --border: 225 15% 13%; /* #24283b */
+    --input: 225 15% 13%; /* #24283b */
+    --ring: 267 84% 81%; /* #bb9af7 */
+
+    --sidebar-background: 222 17% 11%; /* #1a1b26 */
+    --sidebar-foreground: 234 12% 84%; /* #c0caf5 */
+    --sidebar-primary: 267 84% 81%; /* #bb9af7 */
+    --sidebar-primary-foreground: 222 17% 11%; /* #1a1b26 */
+    --sidebar-accent: 225 15% 13%; /* #24283b */
+    --sidebar-accent-foreground: 234 12% 84%; /* #c0caf5 */
+    --sidebar-border: 225 15% 13%; /* #24283b */
+    --sidebar-ring: 267 84% 81%; /* #bb9af7 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
