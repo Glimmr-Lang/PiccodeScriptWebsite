@@ -28,14 +28,15 @@ const Download = () => {
     windows: "iwr -useb https://get.piccode.dev/install.ps1 | iex"
   };
 
-  const exampleCode = `// fibonacci.pic
+  const exampleCode = `
 import std.io
+import std.array
 
 function fibonacci(n=1) = 
   if n <= 1 { n } 
   else { fibonacci(n-1) + fibonacci(n-2) }
 
-let numbers = [1,2,3,4,5,6,7,8,9,10]
+let numbers = Array.fromRange(1, 10)
 let results = numbers |> map(fibonacci)
 
 IO.println("Fibonacci sequence:")
@@ -134,12 +135,17 @@ results |> forEach(IO.println)`;
               <p className="text-gray-600 dark:text-gray-300 mb-6">
                 Download the cross-platform JAR file and run it anywhere Java is installed
               </p>
-              <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3">
-                <DownloadIcon className="mr-2 h-5 w-5" />
-                Download piccode-1.0.0.jar
-              </Button>
+
+              <Link to="https://picasso-releases.fly.dev/piccodescript/v0.2/">
+                <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3">
+                  <ExternalLink className="mr-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  <DownloadIcon className="mr-2 h-5 w-5" />
+                  Download Latest
+                </Button>
+              </Link>
+
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
-                Version 1.0.0 • 12.4 MB
+                Version 0.2 - 2.0 MB
               </p>
             </div>
           </Card>
@@ -190,7 +196,7 @@ results |> forEach(IO.println)`;
             <CodeBlock code={exampleCode} title="fibonacci.pic" />
             <div className="mt-6 bg-gray-900 rounded-lg p-4">
               <code className="text-green-400 font-mono text-sm">
-                $ piccode run fibonacci.pic
+                $ picoc run fibonacci.pic
               </code>
             </div>
           </Card>

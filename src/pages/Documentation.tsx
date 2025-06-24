@@ -52,7 +52,7 @@ const Documentation = () => {
               <p className="text-gray-600 mb-4">
                 Comprehensive guide and tutorial in PDF format
               </p>
-              <a href="https://picasso-releases.fly.dev/piccodescript/" target="_blank" rel="noopener noreferrer">
+              <a href="https://picasso-releases.fly.dev/piccodescript/book/PiccodeScript.pdf" target="_blank" rel="noopener noreferrer">
                 <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
                   <ExternalLink className="mr-2 h-4 w-4" />
                   Download PDF
@@ -70,10 +70,13 @@ const Documentation = () => {
               <p className="text-gray-600 mb-4">
                 Real-world examples and code snippets to get you started
               </p>
-              <Button className="w-full" variant="outline">
-                <Code className="mr-2 h-4 w-4" />
-                Browse Examples
-              </Button>
+              <a href="https://github.com/Glimmr-Lang/PiccodeScript/tree/main/examples" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Browse Examples
+                </Button>
+              </a>
+
             </Card>
           </div>
 

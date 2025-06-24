@@ -36,7 +36,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Learning</h4>
             <div className="space-y-2">
-              <a href="https://picasso-releases.fly.dev/piccodescript/" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="https://picasso-releases.fly.dev/piccodescript/book/PiccodeScript.pdf" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-white transition-colors">
                 PiccodeScript Book (PDF)
               </a>
               <Link to="/documentation" className="block text-gray-400 hover:text-white transition-colors">
