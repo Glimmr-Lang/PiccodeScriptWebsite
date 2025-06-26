@@ -11,11 +11,11 @@ import Footer from "@/components/Footer";
 const Index = () => {
   const helloWorldCode = `import std.io
 
-function greet(name="World") = 
+greet :: (name="World") = 
   "Hello, " + name + "!"
 
-let message = greet("PiccodeScript")
-IO.println(message)`;
+message := greet("PiccodeScript")
+IO::println(message)`;
 
   const features = [
     {

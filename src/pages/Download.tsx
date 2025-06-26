@@ -32,15 +32,15 @@ const Download = () => {
 import std.io
 import std.array
 
-function fibonacci(n=1) = 
+fibonacci :: (n=1) = 
   if n <= 1 { n } 
   else { fibonacci(n-1) + fibonacci(n-2) }
 
-let numbers = Array.fromRange(1, 10)
-let results = numbers |> map(fibonacci)
+numbers := Array.fromRange(1, 10)
+results := numbers |> map(fibonacci)
 
-IO.println("Fibonacci sequence:")
-results |> forEach(IO.println)`;
+IO::println("Fibonacci sequence:")
+results |> forEach(IO::println)`;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
