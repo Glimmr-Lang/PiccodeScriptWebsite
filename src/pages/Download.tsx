@@ -22,10 +22,15 @@ const Download = () => {
     }
   };
 
+  const unixUrl = "http://piccodescript.fly.dev/dl/install.sh"
+  const win32Url = "http://piccodescript.fly.dev/dl/install.ps1"
+  const unixCmd = `wget ${unixUrl} && chmod +x install.sh && ./install.sh`
+  const win32Cmd = `iwr -useb ${win32Url} | iex`
+  
   const installCommands = {
-    macos: "curl -sSL https://get.piccode.dev/install.sh | bash",
-    linux: "wget -O - https://get.piccode.dev/install.sh | bash",
-    windows: "iwr -useb https://get.piccode.dev/install.ps1 | iex"
+    macos: unixCmd,
+    linux: unixCmd,
+    windows: win32Cmd
   };
 
   const exampleCode = `

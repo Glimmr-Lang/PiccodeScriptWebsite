@@ -9,7 +9,7 @@ import CommunitySection from "@/components/CommunitySection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
-  const helloWorldCode = `import std.io
+  const helloWorldCode = `IO :: import std.io
 
 greet :: (name="World") = 
   "Hello, " + name + "!"
@@ -25,7 +25,7 @@ IO::println(message)`;
     },
     {
       icon: <Code className="h-6 w-6" />,
-      title: "Ultra Simple - 8 Keywords",
+      title: "Ultra Simple - 9 Keywords",
       description: "Incredibly simple syntax with only 8 keywords, making it easy to learn and master quickly"
     },
     {
@@ -47,7 +47,8 @@ IO::println(message)`;
               PiccodeScript
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              A modern functional programming language that makes complex problems simple and elegant
+              A modern and mininal dynamic functional programming language created for 
+              general purpose scripting and embedding  
             </p>
           </div>
           

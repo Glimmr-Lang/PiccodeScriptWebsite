@@ -24,7 +24,7 @@ const Navigation = () => {
             <Link to="/documentation" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
               Documentation
             </Link>
-            <a href="https://github.com" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+            <a href="https://github.com/Glimmr-Lang/PiccodeScript" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
               GitHub
             </a>
             <Link to="/download">
