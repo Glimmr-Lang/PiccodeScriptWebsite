@@ -24,11 +24,12 @@ const Download = () => {
 
   const unixUrl = "http://piccodescript.fly.dev/dl/install.sh"
   const win32Url = "http://piccodescript.fly.dev/dl/install.ps1"
-  const unixCmd = `wget ${unixUrl} && chmod +x install.sh && ./install.sh`
+  const unixCmd = `wget -O - ${unixUrl} | bash`
+  const macOSCmd = `curl -sSL ${unixUrl} | bash`
   const win32Cmd = `iwr -useb ${win32Url} | iex`
   
   const installCommands = {
-    macos: unixCmd,
+    macos: macOSCmd,
     linux: unixCmd,
     windows: win32Cmd
   };
